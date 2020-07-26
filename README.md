@@ -1,2 +1,2 @@
 # dots
-dOTS stands for Dilineated Online Testing Services
+dOTS is an distributed online testing service
