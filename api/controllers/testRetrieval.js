@@ -6,6 +6,7 @@ module.exports = {
             test.findOne({testID:testID}, (err, obj) => {
                 if(err) {
                     console.error(err)
+                    reject(err)
                 }
                 else {
                     if (obj !== undefined) {
@@ -26,7 +27,6 @@ module.exports = {
                                 "status":403
                             })
                         }
-                        
                     }
                     else {
                         resolve({
