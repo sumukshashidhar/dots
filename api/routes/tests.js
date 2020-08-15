@@ -9,6 +9,6 @@ module.exports = function(app) {
         // in the request parameter, we can get the test ID. If allowed
         // we can send the test back to the user, else, we can return a not due message
 
-        
+        const testid = req.query.testID;
     })
 }
