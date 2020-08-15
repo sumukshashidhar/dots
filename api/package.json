@@ -1,0 +1,17 @@
+{
+  "name": "dots-api",
+  "version": "0.0.1",
+  "description": "A simple API for the DOTS platform",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sumuk Shashidhar",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.0"
+  }
+}
