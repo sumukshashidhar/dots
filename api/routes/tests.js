@@ -9,7 +9,12 @@ module.exports = function(app) {
     app.get('/api/v1/getSingleTest', async (req, res) => {
         // in the request parameter, we can get the test ID. If allowed
         // we can send the test back to the user, else, we can return a not due message
-
+        if(req.query.testID === undefined) {
+            res.json({
+                "status":400,
+                "message":"No TestID in parameter"
+            })
+        }
         const testid = req.query.testID;
         var response = await tests.getSingle(testid);
         if(response["status"] === 200) {

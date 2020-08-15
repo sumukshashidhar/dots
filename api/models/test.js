@@ -3,8 +3,8 @@ var mongoose = require("mongoose");
 var testSchema = new mongoose.Schema({
     testID:String,
     testName:String,
-    testDueTime:Date(),
-    testEndTime:Date(),
+    testDueTime:Date,
+    testEndTime:Date,
     testQuestions:Array
 })
 
